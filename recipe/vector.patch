@@ -1,0 +1,14 @@
+diff --git a/Child/Code/ChildInterface/bmi.hxx b/Child/Code/ChildInterface/bmi.hxx
+index 54e6abf..a01d103 100644
+--- a/Child/Code/ChildInterface/bmi.hxx
++++ b/Child/Code/ChildInterface/bmi.hxx
+@@ -1,6 +1,9 @@
+ #ifndef BMI_HXX
+ #define BMI_HXX
+ 
++#include <vector>
++
++
+ namespace bmi {
+ 
+   const int BMI_SUCCESS = 0;
