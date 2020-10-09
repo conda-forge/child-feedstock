@@ -1,4 +1,4 @@
-{% set version = "18.11.12" %}
+{% set version = "20.10.08" %}
 
 package:
   name: child
@@ -6,11 +6,13 @@ package:
 
 source:
   url: https://github.com/childmodel/child/archive/v{{ version }}.tar.gz
-  sha256: 8542a3e7ce4df5e5f41cf46c911294b202d9db06ce45546b04bee3b4eb34accc
+  sha256: 50c2af23d33f7eac7d109c39ee739ffa90bdb8122b15400fb3d124eaf8746868
+  patches:
+    - vector.patch  # include vector header
 
 build:
   skip: True  # [win]
-  number: 1001
+  number: 0
 
 requirements:
   build:
