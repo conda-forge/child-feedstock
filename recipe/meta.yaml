@@ -1,4 +1,4 @@
-{% set version = "20.10.18" %}
+{% set version = "20.10.29" %}
 
 package:
   name: child
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/childmodel/child/archive/v{{ version }}.tar.gz
-  sha256: e7bfd00ace0dad0ff6a8349f05ee72ae95f4fc187732b0fcd1ecf74a5441f1c6
+  sha256: 534c7f2f925e0843c0de9521d7111784e49d205dcaf7ade34def76800bcc74d2
 
 build:
   skip: True  # [win]
