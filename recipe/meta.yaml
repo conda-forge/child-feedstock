@@ -7,6 +7,8 @@ package:
 source:
   url: https://github.com/childmodel/child/archive/v{{ version }}.tar.gz
   sha256: 1773d76b4e9ee8a54c962700b6fc988f67f26025a0e8b31f4d90646eaaccd19c
+  patches:
+    - remove_predicate.patch
 
 build:
   skip: True  # [win and vc<14]

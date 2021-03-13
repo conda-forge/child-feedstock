@@ -1,0 +1,13 @@
+diff --git a/src/ChildInterface/tests/bmi_model_child_test.cpp b/src/ChildInterface/tests/bmi_model_child_test.cpp
+index 2b413c7..3441c65 100644
+--- a/src/ChildInterface/tests/bmi_model_child_test.cpp
++++ b/src/ChildInterface/tests/bmi_model_child_test.cpp
+@@ -19,7 +19,7 @@
+   } \
+ }
+ 
+-Predicates predicate;
++// Predicates predicate;
+ 
+ 
+ int
