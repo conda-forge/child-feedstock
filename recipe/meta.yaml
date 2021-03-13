@@ -1,4 +1,4 @@
-{% set version = "20.10.29" %}
+{% set version = "21.03.12" %}
 
 package:
   name: child
@@ -6,16 +6,21 @@ package:
 
 source:
   url: https://github.com/childmodel/child/archive/v{{ version }}.tar.gz
-  sha256: 534c7f2f925e0843c0de9521d7111784e49d205dcaf7ade34def76800bcc74d2
+  sha256: 1773d76b4e9ee8a54c962700b6fc988f67f26025a0e8b31f4d90646eaaccd19c
+  patches:
+    - remove_predicate.patch
 
 build:
-  skip: True  # [win]
+  skip: True  # [win and vc<14]
   number: 0
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+  host:
     - cmake
+    - pkg-config
+    - bmi-cxx
 
 test:
   commands:
