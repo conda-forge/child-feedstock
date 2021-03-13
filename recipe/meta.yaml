@@ -1,4 +1,4 @@
-{% set version = "20.10.18" %}
+{% set version = "21.03.12" %}
 
 package:
   name: child
@@ -6,16 +6,19 @@ package:
 
 source:
   url: https://github.com/childmodel/child/archive/v{{ version }}.tar.gz
-  sha256: e7bfd00ace0dad0ff6a8349f05ee72ae95f4fc187732b0fcd1ecf74a5441f1c6
+  sha256: 1773d76b4e9ee8a54c962700b6fc988f67f26025a0e8b31f4d90646eaaccd19c
 
 build:
-  skip: True  # [win]
+  skip: True  # [win and vc<14]
   number: 0
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+  host:
     - cmake
+    - pkg-config
+    - bmi-cxx
 
 test:
   commands:
