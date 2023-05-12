@@ -22,6 +22,8 @@ requirements:
     - gnuconfig  # [unix]
     - {{ compiler('cxx') }}
   host:
+    - cmake
+    - pkg-config
     - bmi-cxx
 
 test:
