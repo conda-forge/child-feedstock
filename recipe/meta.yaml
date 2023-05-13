@@ -23,7 +23,6 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - cmake
-    - pkg-config
     - bmi-cxx
 
 test:
